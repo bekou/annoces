@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_dart_annonces_domain_Users" object="${users}" path="/userses" z="Acej5SAWPCgZMbz68prfSocIvWw=">
+        <field:display field="name" id="s_com_dart_annonces_domain_Users_name" object="${users}" z="iXIVIXdCiXNTQrDNpxaxse561TM="/>
+        <field:display field="prenom" id="s_com_dart_annonces_domain_Users_prenom" object="${users}" z="+xogLaGJpns1lvZgYj0i2hkph+M="/>
+        <field:display field="pseudo" id="s_com_dart_annonces_domain_Users_pseudo" object="${users}" z="wGwPO9hbYoxNFfapkRsIk83Ct7k="/>
+        <field:display field="email" id="s_com_dart_annonces_domain_Users_email" object="${users}" z="sKT7tT0rvRy/5nInGbFcM3C5zxA="/>
+        <field:display field="password" id="s_com_dart_annonces_domain_Users_password" object="${users}" z="J/bSdIaEzkiv1Zn+cL1M9TGL3Tk="/>
+    </page:show>
+</div>

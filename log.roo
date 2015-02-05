@@ -1,0 +1,29 @@
+project --topLevelPackage com.dart.annonces
+jpa setup --provider HIBERNATE --database MYSQL 
+
+entity jpa --class ~.domain.Users --activeRecord false
+field string --fieldName name
+field string --fieldName prenom
+field string --fieldName pseudo --unique 
+field string --fieldName email --unique 
+field string --fieldName password 
+
+entity jpa --class ~.domain.Annonces --activeRecord false
+field string --fieldName sujet
+field date --fieldName dateCreation --type java.util.Date
+field string --fieldName description 
+field reference --fieldName userID --type ~.domain.Users 
+
+repository jpa --interface ~.repository.UsersRepository --entity ~.domain.Users
+repository jpa --interface ~.repository.AnnoncesRepository --entity ~.domain.Annonces
+service type --interface ~.service.UsersService --entity ~.domain.Users
+service type --interface ~.service.AnnoncesService --entity ~.domain.Annonces
+
+web mvc setup
+security setup
+web mvc all --package ~.web
+web mvc finder all
+exit
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2015-02-05 08:54:27
+// script --file log.roo
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2015-02-05 08:54:27

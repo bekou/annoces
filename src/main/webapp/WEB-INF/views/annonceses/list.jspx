@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_dart_annonces_domain_Annonces" items="${annonceses}" z="ekKHC6RG/aJpo5o1fcik/c0TfPo=">
+        <table:table data="${annonceses}" id="l_com_dart_annonces_domain_Annonces" path="/annonceses" z="k5w7kdJ/OgJ0F23sAKVKLV11HlU=">
+            <table:column id="c_com_dart_annonces_domain_Annonces_sujet" property="sujet" z="ZmANCGci90XrVGu2qG+IigYdbPo="/>
+            <table:column date="true" dateTimePattern="${annonces_datecreation_date_format}" id="c_com_dart_annonces_domain_Annonces_dateCreation" property="dateCreation" z="zrUvH8vjHCW3t8aum8h6gALJCi8="/>
+            <table:column id="c_com_dart_annonces_domain_Annonces_description" property="description" z="ZM23Jml1Ng1n57v3VZtfRAFh/Ow="/>
+            <table:column id="c_com_dart_annonces_domain_Annonces_userID" property="userID" z="TQqak8fo13pfbRgWPqQhsa7cB0c="/>
+        </table:table>
+    </page:list>
+</div>

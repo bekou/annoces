@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_dart_annonces_domain_Annonces" modelAttribute="annonces" path="/annonceses" versionField="Version" z="5Dwo9e1jwqn0J8JK0ULTODys/k8=">
+        <field:input field="sujet" id="c_com_dart_annonces_domain_Annonces_sujet" z="ggdX+CVlVOIVkC17KJH9wCeH3kA="/>
+        <field:datetime dateTimePattern="${annonces_datecreation_date_format}" field="dateCreation" id="c_com_dart_annonces_domain_Annonces_dateCreation" z="xR7uzRBIgme1agxcvtxa3tbSeEk="/>
+        <field:input field="description" id="c_com_dart_annonces_domain_Annonces_description" z="YEUC7ZL630rEZmB17zAwyF/qsCw="/>
+        <field:select field="userID" id="c_com_dart_annonces_domain_Annonces_userID" itemValue="id" items="${userses}" path="/userses" z="EAbUPcn/o2k0/DKePyFv6FkFA+M="/>
+    </form:update>
+</div>

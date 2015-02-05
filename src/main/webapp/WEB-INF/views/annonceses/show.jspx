@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_dart_annonces_domain_Annonces" object="${annonces}" path="/annonceses" z="nMrmi2GKIHL35b1OmzOoJkJ6NqQ=">
+        <field:display field="sujet" id="s_com_dart_annonces_domain_Annonces_sujet" object="${annonces}" z="GpIUyZSMXzaTcpxldyQ+5UrzmtM="/>
+        <field:display date="true" dateTimePattern="${annonces_datecreation_date_format}" field="dateCreation" id="s_com_dart_annonces_domain_Annonces_dateCreation" object="${annonces}" z="0ap+n8rl0zQtW1SNZGvTzVfXmvs="/>
+        <field:display field="description" id="s_com_dart_annonces_domain_Annonces_description" object="${annonces}" z="Wc4syQElBoG8Aaam8HKYwRyfISw="/>
+        <field:display field="userID" id="s_com_dart_annonces_domain_Annonces_userID" object="${annonces}" z="jn5UXTp6QQhOv1yrffaQX4hVpcw="/>
+    </page:show>
+</div>
